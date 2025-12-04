@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* general body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #0c045c;
+}
+
+/* style for all links */
+a{
+    text-decoration: none;
+}
+
+/* navigation bar styles */
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: black;
+    border-bottom: 0.5px solid #0c045c;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+}
+
+.nav-logo-img {
+    height: 50px;
+    padding: 0 20px;
+}
+.nav-icon {
+    height: 30px;
+    padding: 20px 10px;
+}
+
+.nav-link, .special-nav-link {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 20px;
+    font-size: large;
+}
+
+.special-nav-link a{
+    background-color: green;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: medium;
+}
+.special-nav-link a:hover {
+    background-color: #1a6bbd;
+}
+
+.login-btn:hover .login-dropdown, .contact-link:hover .contact-dropdown {
+    display: block;
+}
+
+.login-dropdown, .contact-dropdown{
+    position: absolute;
+    display: none;
+    top: 80px;
+    background-color: white;
+    border: 1px solid black;
+    list-style: none;
+    padding: 20px;
+}
+
+.nav-link a {
+    color: #0c045c;
+}
+.nav-link a:hover {
+    color: #1a6bbd;
+}
+
+.nav-left, .nav-left-links, .nav-right-links {
+    display: flex;
+    list-style: none;
+}
+.login-dropdown-links, .contact-dropdown-links {
+    list-style: none;
+}
+
+/* report section styling */
+#report {
+    margin-top: 90px;
+    background-color: #0c045c;
+    height: 30px;
+    padding-top: 10px;
+    text-align: center;
+}
+#report a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* crm section styling */
+#crm {
+    height: 500px;
+    background: url(section2-bg.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.crm-text {
+    /* background-color: red; */
+    width: 800px;
+    margin: 0 100px;
+    padding: 100px;
+}
+.crm-text h5, h1, p {
+    padding: 10px;
+}
+.crm-text h5 {
+    color: #0c045c;
+}
+.crm-text h1 {
+    font-size: 56px;
+}
+.crm-text p {
+    width: 500px;
+    font-size: larger;
+    color: #444;
+}
+.free-crm {
+    color: #2691ef;
+}
+
+/* agentforce section styling */
+#agentforce {
+    text-align: center;
+    padding: 100px;
+    /* background-color: red; */
+}
+.agentforce-text {
+    width: 800px;
+    margin: auto;
+}
+.agentforce-text h1 {
+    font-size: 48px;
+}
+.agentforce-text p {
+    color: #444;
+    font-size: larger;
+}
+.trustees {
+    text-align: left;
+    margin-top: 50px;
+}
+.trustees h4 {
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.trustee-logos {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* scale section styling */
+#scale {
+    text-align: center;
+    margin: 0 100px;
+    /* background-color: red; */
+}
+.scale-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.scale-text {
+    width: 700px;
+    text-align: left;
+    padding: 100px 0;
+    border-left: 1px solid black;
+    padding-left: 20px;
+}
+.scale-h3 {
+    font-size: 20px;
+    padding: 20px 0;
+    color: #2691ef;
+}
+
+/* grid section styling */
+
+#grid {
+    margin-top: 100px;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 350px 350px 350px 350px 350px;
+    gap: 30px;
+}
+
+.grid-item {
+    /* background-color: #eee; */
+    padding:  20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #bbb;
+    align-items: center;
+    transition: .2s ease;
+    text-align: start;
+}
+.grid-item:hover {
+    box-shadow: 0 4px 8px #000;
+}
+.grid-top, .grid-bottom {
+    margin: 20px;
+}
+.grid-top h4 {
+    margin-bottom: 40px;
+    font-size: larger;
+    color:#0c045c;
+}
+.grid-top p {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 80px;
+}
+
+.grid-bottom {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 60px; */
+}
+
+.grid-bottom a {
+    text-decoration: underline;
+    color:#150996;
+}
+.grid-bottom a:hover {
+    color: #2691ef;
+}
+.grid-icon {
+    /* background: red; */
+    box-shadow: 0 4px 8px #bbb;
+    height: 60px;
+    width: 50px;
+    padding:0 10px;
+    border-radius: 100%;
+}
+
+/* what is salesforce section styling */
+.w-salesforce-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px 0;
+    margin-bottom: 0;
+}
+.w-salesforce-text {
+    width: 600px;
+    text-align: left;
+    margin-left: 120px;
+}
+
+.w-salesforce-video {
+    margin-right: 120px;
+}
+.w-salesforce-image img {
+    width: 100%;
+}
+
+/* subscribe form styling */
+#form {
+    background-color: #0c045c;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    font-size: 24px;
+}
+.subscribe-form input {
+    padding: 15px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+
+/* get started section styling */
+
+ #getstarted {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.header {
+    margin: 50px;
+    padding: 50px;
+    /* width: 400px; */
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.try-btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 40px;
+    background: #2691ef;
+    color: white;
+    border-radius: 5px;
+    margin: 40px;
+}
+
+.try-btn:hover {
+    background: #1a6bbd;
+}
+
+.bg-image {
+    width: 100%;
+}
+
+#links {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* grid-template-rows: 300px; */
+    margin: 50px 100px;
+}
+
+.logo, .social-icons, .contact-text, .contact-link {
+    padding: 20px 0;
+}
+
+.logo-img {
+    height: 75px;
+}
+.icon {
+    height: 30px;
+    padding: 5px;
+}
+.icon:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.contact-link a {
+    color: black;
+    text-decoration: underline;
+}
+
+.div1 {
+    display: block;
+}
+
+.div2 {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.div2-header {
+    font-size: 14px;
+    color: black;
+    padding: 20px 7px;
+}
+
+.div2-link {
+    color: #2691ef;
+    padding: 7px;
+    font-size: 12px;
+}
+
+.div2-link:hover {
+    color: #1a6bbd;
+    text-decoration: underline;
+}
+
+/* footer styling */
+
+footer {
+    background-color: #0c045c;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-div1 {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-link, .footer-worldwide {
+    color: white;
+    text-decoration: underline;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.footer-worldwide {
+    font-size: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.footer-div2 {
+    margin: auto;
+    width: 50%;
+    font-size: 12px;
+}
