@@ -11,7 +11,7 @@
     <nav>
         <div class="nav-left">
             <img class="nav-logo-img" src="logo.svg">
-            <ul class="nav-left-links">
+            <ul class="nav-left-links" id="menulist">
                 <li class="nav-link"><a href="#">Products</a></li>
                 <li class="nav-link"><a href="#">Indstries</a></li>
                 <li class="nav-link"><a href="#">Customers</a></li>
@@ -52,6 +52,9 @@
 
             </ul>
         </div>
+        <div class="menu-icon">
+                    <img src="menu-icon.png" alt="" onclick="toggleMenu()">
+                </div>
     </nav>
 
     <section id="report">
@@ -423,5 +426,17 @@
             <p>designed by: <em>Muhammad Ibrahim Umara</em></p>
         </div>
     </footer>
+
+    <script>
+        let menulist = document.getElementById("menulist");
+
+        function toggleMenu() {
+            if (menulist.style.display === "block") {
+                menulist.style.display = "none";
+            } else {
+                menulist.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
