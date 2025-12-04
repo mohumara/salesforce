@@ -446,5 +446,207 @@ footer {
         border-top: 0.5px solid #0c045c;
     }
 
+    #crm {
+        background-size: cover;
+        /* background-position: center; */
+    }
+
+    .free-crm {
+        font-size: 28px;
+        color: cyan;
+    }
+
+    .crm-text {
+        width: auto;
+        margin: 0 10px;
+        padding: 50px 10px;
+    }
+
+    .crm-text p {
+        width: auto;
+    }
+
+    .try-btn {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    #agentforce {
+        padding: 50px 10px;
+    }
+    .agentforce-text {
+        width: auto;
+    }
+
+    #scale {
+        margin: 5px 10px;
+    }
+    .scale-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .scale-text {
+        width: auto;
+        border-left: none;
+        border-top: 1px solid black;
+        padding-left: 0;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+
+    #grid {
+        margin: 0 10px;
+        padding: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    .w-salesforce-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .w-salesforce-text {
+        width: auto;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .w-salesforce-video {
+        margin: 20px 0;
+    }
+
+    #links {
+        grid-template-columns: auto auto;
+        margin: 20px;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    * {
+        font-size: 14px;
+    }
+    nav {
+        /* flex-direction: column; */
+        height: auto;
+        justify-content: space-between;
+        width: 360px;
+    }
+    .nav-left-links {
+        display: none;
+        margin-top: 50px;
+    }
+    .nav-right-links {
+        display: none;
+    }
+
+    #report {
+        width: 360px;
+        padding: 10px 20px;
+    }
+
+    .crm-text {
+        padding: 20px 5px;
+    }
+    .crm-text p {
+        width: auto;
+        color: white;
+    }
+
+    .free-crm {
+        font-size: 28px;
+        color: cyan;
+    }
+
+    #agentforce {
+        padding: 20px 10px;
+    }
+    .agentforce-text h1 {
+        font-size: 30px;
+    }
+
+    .agentforce-text {
+        width: 360px;
+    }
+
+    .try-btn {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .trustee-logos {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 350px;
+        gap: 20px;
+    }
+
+    #scale h1 {
+        font-size: 30px;
+    }
+
+    .scale-container iframe{
+        height: 200px;
+        width: 300px;
+
+    }
+
+    .scale-text {
+        width: 360px;
+    }
+
+    #grid {
+        margin-top: 50px;
+        padding: 10px;
+    }
+    .grid-item {
+        padding: 10px;
+    }
+    .grid-top, .grid-bottom {
+        margin: 5px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .grid-container {
+        margin: 0;
+        grid-template-columns: 350px;
+    }
+
+    .w-salesforce-container {
+        padding: 50px;
+    }
+    .w-salesforce-video iframe{
+        margin: 0;
+        height: 200px;
+        width: 300px;
+    }
+
+    .form-inputs {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-inputs input {
+        width: 300px;
+    }
+
+    #getstarted {
+        margin-top: 50px;
+    }
+
+    #getstarted h1 {
+        font-size: 30px;
+    }
+
+    #links {
+        grid-template-columns: auto;
+    }
+
 
 }
